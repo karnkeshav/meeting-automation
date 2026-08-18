@@ -44,7 +44,7 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git add dashboard.html data/ archives/ -f
+        git add index.html data/ archives/ -f
         git commit -m "Update dashboard from meeting notes" || true
         git push
       env:
