@@ -4,9 +4,8 @@ on:
   push:
     paths:
       - 'meeting-notes-*.txt'
-      
 
-   jobs:
+jobs:
   update-dashboard:
     runs-on: ubuntu-latest
     permissions:
