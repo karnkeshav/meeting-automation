@@ -23,7 +23,7 @@ def build_dashboard():
     html = generate_html(meetings, latest_meeting)
     
     # Write to file
-    with open('dashboard.html', 'w', encoding='utf-8') as f:
+    with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html)
     
     print("✅ Dashboard built successfully")
