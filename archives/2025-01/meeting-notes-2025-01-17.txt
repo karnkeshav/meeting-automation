@@ -1,0 +1,19 @@
+MEETING: Q1 Review
+DATE: 2025-01-17
+ATTENDEES: Tom, Jane, Dave
+
+MEETING SUMMARY:
+Reviewed quarterly goals and progress.
+
+DECISIONS MADE:
+- Approve Q2 budget increase
+
+ACTION ITEMS:
+- Tom: Prepare budget report by Jan 20
+- Jane: Update project timeline by Jan 19
+
+RISKS IDENTIFIED:
+- Market changes
+
+NEXT STEPS:
+Board meeting on Feb 1.

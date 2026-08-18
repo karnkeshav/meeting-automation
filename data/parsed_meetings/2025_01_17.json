@@ -1,0 +1,30 @@
+{
+  "meeting": "Q1 Review",
+  "date": "2025-01-17",
+  "attendees": [
+    "Tom",
+    "Jane",
+    "Dave"
+  ],
+  "summary": "Reviewed quarterly goals and progress.",
+  "decisions": [
+    "Approve Q2 budget increase"
+  ],
+  "action_items": [
+    {
+      "task": "Prepare budget report",
+      "owner": "Tom",
+      "due": "Jan 20"
+    },
+    {
+      "task": "Update project timeline",
+      "owner": "Jane",
+      "due": "Jan 19"
+    }
+  ],
+  "risks": [
+    "Market changes"
+  ],
+  "next_steps": "Board meeting on Feb 1.",
+  "timestamp": "2026-08-18T17:49:14.266439"
+}
