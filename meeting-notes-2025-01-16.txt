@@ -1,0 +1,21 @@
+MEETING: Team Standup
+DATE: 2025-01-16
+ATTENDEES: Alice, Bob, Charlie
+
+MEETING SUMMARY:
+Quick sync on project status and blockers.
+
+DECISIONS MADE:
+- Move deadline to next week
+- Approve design changes
+
+ACTION ITEMS:
+- Alice: Complete testing by Jan 18
+- Bob: Fix critical bug by Jan 17
+
+RISKS IDENTIFIED:
+- Tight deadline
+- One team member on leave
+
+NEXT STEPS:
+Daily standups at 10am.
