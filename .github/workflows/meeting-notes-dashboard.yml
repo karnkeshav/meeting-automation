@@ -1,0 +1,45 @@
+name: Process Meeting Notes & Update Dashboard
+
+on:
+  push:
+    paths:
+      - 'meeting-notes-*.txt'
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Build dashboard
+      run: python scripts/build_dashboard.py
+    
+    - name: Parse meeting notes
+      run: python scripts/parse_notes.py
+    
+    - name: Create action items as GitHub Issues
+      run: python scripts/create_action_items.py
+    
+    - name: Send to Microsoft Teams
+      run: python scripts/send_teams_notification.py
+      env:
+        TEAMS_WEBHOOK: ${{ secrets.TEAMS_WEBHOOK_URL }}
+    
+    - name: Archive notes
+      run: python scripts/archive_notes.py
+    
+    - name: Commit dashboard and archive
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add dashboard.html data/ archives/ -f
+        git commit -m "Update dashboard from meeting notes" || true
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
