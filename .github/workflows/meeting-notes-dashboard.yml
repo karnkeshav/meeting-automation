@@ -17,6 +17,9 @@ jobs:
       with:
         python-version: '3.9'
     
+    - name: Install dependencies
+      run: pip install requests
+    
     - name: Build dashboard
       run: python scripts/build_dashboard.py
     
